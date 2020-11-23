@@ -14,8 +14,8 @@
       <h1 class="text-white">GameTimeTracker <i class="fas fa-gamepad text-primary"></i></h1>
     </div>
   </nav>
-  <div class="container mt-4 text-white">
-    <form id="">
+  <div id="container" class="container mt-4 text-white">
+    <form id="game-form" class="mb-5">
       <div class="form-group">
         <label for="title">Game Title</label>
         <input type="text" id="title" class="form-control">
@@ -26,10 +26,16 @@
         <button class="btn btn-success">ADD</button>
       </div>
     </form>
-    <br><br>
-    <ul class="list-group text-dark">
-      <li class="list-group-item"></li>
-    </ul>
+    <table id="game-list" class="table text-white">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Time</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="game-list"></tbody>
+    </table>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
   <script src="app.js"></script>
